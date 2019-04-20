@@ -19,10 +19,10 @@ sudo mv terraform /usr/local/bin/
 
 # Init
 ```bash
-sh add-cloudflare-creds.sh
-sh set-up.sh
+bash add-cloudflare-creds.sh
+bash set-up.sh
 ```
 
-# lock down server
+# Lock down server
 - <https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/>
 - <https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2>
