@@ -10,7 +10,7 @@ APP=${0##*/}
 log () {
     TZ=GMT
     DATE=`date`
-    echo "$1" | sed -e "s/^/${DATE}, ${APP}: /;"
+    echo "$1" | sed -e "s/^/${DATE}, ${APP}: /;" >> ~/cloudflare-dynamic-ips.logs
 }
 
 log "Running update vpn server ip command"
@@ -54,8 +54,6 @@ log "${TF_OUTPUT}"
 
 ## check IP is correct
 log "DNS IP updated to: ${SERVER_IP}"
-
-
 
 sleep 2m
 
