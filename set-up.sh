@@ -13,7 +13,7 @@ if ! which terraform ; then
 fi
 
 # run job every hour
-CRON="0 */1 * * * sh `pwd`/update-ip.sh"
+CRON="0 */1 * * * bash `pwd`/update-ip.sh"
 
 # check cron tab exists
 if crontab -l ; then
