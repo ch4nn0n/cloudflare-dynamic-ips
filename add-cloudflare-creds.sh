@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -o nounset
 set -o errexit
-set -o pipefail
 
 read -p "Enter CloudFlare email: " email
 read -p "Enter CloudFlare token: " token
