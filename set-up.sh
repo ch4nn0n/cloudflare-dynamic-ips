@@ -9,10 +9,11 @@ if ! which terraform ; then
     wget https://releases.hashicorp.com/terraform/${VER}/terraform_${VER}_linux_amd64.zip
     unzip terraform_${VER}_linux_amd64.zip
     sudo mv terraform /usr/local/bin/
+    rm terraform_${VER}_linux_amd64.zip
 fi
 
 # run job every hour
-CRON="0 */1 * * * * sh `pwd`/update-ip.sh"
+CRON="0 */1 * * * sh `pwd`/update-ip.sh"
 
 # check cron tab exists
 if crontab -l ; then
