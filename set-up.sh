@@ -6,7 +6,7 @@ set -o errexit
 if ! which terraform ; then
 #    brew install terraform
     VER="0.11.13"
-    wget https://releases.hashicorp.com/terraform/${VER}/terraform_${VER}_linux_arn.zip
+    wget https://releases.hashicorp.com/terraform/${VER}/terraform_${VER}_linux_arm.zip
     unzip terraform_${VER}_linux_amd64.zip
     sudo mv terraform /usr/local/bin/
     rm terraform_${VER}_linux_amd64.zip
